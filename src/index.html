@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="calculator">
+      <div class="display">
+        <div class="expression"></div>
+        <div class="result">0</div>
+      </div>
+      <div class="buttons">
+        <button class="function" data-action="clear">C</button>
+        <button class="function" data-action="backspace">&#9003;</button>
+        <button class="operator" data-action="operator" data-value="/">&#247;</button>
+        <button class="operator" data-action="operator" data-value="*">&#215;</button>
+
+        <button data-action="number" data-value="7">7</button>
+        <button data-action="number" data-value="8">8</button>
+        <button data-action="number" data-value="9">9</button>
+        <button class="operator" data-action="operator" data-value="-">&#8722;</button>
+
+        <button data-action="number" data-value="4">4</button>
+        <button data-action="number" data-value="5">5</button>
+        <button data-action="number" data-value="6">6</button>
+        <button class="operator" data-action="operator" data-value="+">+</button>
+
+        <button data-action="number" data-value="1">1</button>
+        <button data-action="number" data-value="2">2</button>
+        <button data-action="number" data-value="3">3</button>
+        <button class="equals span-two" data-action="equals" style="grid-row: span 2;">=</button>
+
+        <button class="span-two" data-action="number" data-value="0">0</button>
+        <button data-action="decimal" data-value=".">.</button>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
